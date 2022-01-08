@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#E34000"
-        android:textSize="50dp"
+        android:textSize="40dp"
         android:text="오기환 찌끄레기!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
