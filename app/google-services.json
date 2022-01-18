@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1008338210212",
+    "firebase_url": "https://plan-a-70113-default-rtdb.firebaseio.com",
+    "project_id": "plan-a-70113",
+    "storage_bucket": "plan-a-70113.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1008338210212:android:f12eef19107c097146c531",
+        "android_client_info": {
+          "package_name": "com.example.plan_a"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1008338210212-7gon0bil4dkbd83l7rednve96ljl4tqi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAAkjuVede6bjLldmNIIG5qvZfrkYYP1c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1008338210212-7gon0bil4dkbd83l7rednve96ljl4tqi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

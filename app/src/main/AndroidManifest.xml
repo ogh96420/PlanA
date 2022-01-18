@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.plan_a">
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -14,10 +15,27 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Sub2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".SubActivity"
+            android:exported="false" />
+        <activity
+            android:name=".THR4"
+            android:exported="false" />
+        <activity
+            android:name=".THR3"
+            android:exported="false" />
+        <activity
+            android:name=".THR2"
+            android:exported="false" />
+        <activity
+            android:name=".THR1"
+            android:exported="false" />
     </application>
 
 </manifest>

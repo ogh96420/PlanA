@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "194418722950",
+    "firebase_url": "https://plana-85065-default-rtdb.firebaseio.com",
+    "project_id": "plana-85065",
+    "storage_bucket": "plana-85065.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:194418722950:android:ffaa668f53165b12186907",
+        "android_client_info": {
+          "package_name": "com.example.plan_a"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "194418722950-b1vvbmejag74bjdgcjifv2jbbe1blags.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.plan_a",
+            "certificate_hash": "67ee777f78dbf349533216171090b213ce61db90"
+          }
+        },
+        {
+          "client_id": "194418722950-lkrrpuh918jugn3u1fh1qrgm4u88pt44.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZst2oSZdO5rC3q4VQ8kaCTUdZqSEawnI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "194418722950-lkrrpuh918jugn3u1fh1qrgm4u88pt44.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
