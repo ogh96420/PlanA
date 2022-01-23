@@ -3,6 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/nlknkjkbk/app/src/main/res/layout/activity_main.xml" value="0.24947916666666667" />
+        <entry key="..\:/AndroidStudioProjects/nlknkjkbk/app/src/main/res/layout/activity_setting.xml" value="0.24947916666666667" />
+        <entry key="..\:/AndroidStudioProjects/nlknkjkbk/app/src/main/res/layout/activity_sub.xml" value="0.24947916666666667" />
+        <entry key="..\:/AndroidStudioProjects/nlknkjkbk/app/src/main/res/layout/activity_sub2.xml" value="0.24947916666666667" />
+        <entry key="..\:/AndroidStudioProjects/nlknkjkbk/app/src/main/res/layout/activity_thr1.xml" value="0.264" />
+        <entry key="..\:/AndroidStudioProjects/nlknkjkbk/app/src/main/res/layout/activity_thr3.xml" value="0.24947916666666667" />
+        <entry key="..\:/AndroidStudioProjects/nlknkjkbk/app/src/main/res/layout/activity_thr4.xml" value="0.24947916666666667" />
+        <entry key="..\:/AndroidStudioProjects/nlknkjkbk/app/src/main/res/layout/fragment_china.xml" value="0.24947916666666667" />
+        <entry key="..\:/AndroidStudioProjects/nlknkjkbk/app/src/main/res/layout/fragment_japen.xml" value="0.24947916666666667" />
+        <entry key="..\:/AndroidStudioProjects/nlknkjkbk/app/src/main/res/layout/fragment_korea.xml" value="0.24947916666666667" />
+        <entry key="..\:/AndroidStudioProjects/nlknkjkbk/app/src/main/res/layout/fragment_main.xml" value="0.24947916666666667" />
+        <entry key="..\:/AndroidStudioProjects/nlknkjkbk/app/src/main/res/layout/fragment_menu.xml" value="0.24947916666666667" />
+        <entry key="..\:/AndroidStudioProjects/nlknkjkbk/app/src/main/res/layout/fragment_usa.xml" value="0.24947916666666667" />
+        <entry key="..\:/AndroidStudioProjects/nlknkjkbk/app/src/main/res/layout/list_menu.xml" value="0.24947916666666667" />
+        <entry key="..\:/AndroidStudioProjects/nlknkjkbk/app/src/main/res/layout/menu_detail.xml" value="0.24947916666666667" />
         <entry key="..\:/Users/PARK/AndroidStudioProjects/PlanA/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.38229166666666664" />
         <entry key="..\:/Users/PARK/AndroidStudioProjects/PlanA/app/src/main/res/drawable/ic_launcher_background.xml" value="0.38229166666666664" />
         <entry key="..\:/Users/PARK/AndroidStudioProjects/PlanA/app/src/main/res/layout/activity_main.xml" value="0.36614583333333334" />

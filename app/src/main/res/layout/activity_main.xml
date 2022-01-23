@@ -6,44 +6,32 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/button_main"
-        android:layout_width="150dp"
-        android:layout_height="46dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="30dp"
-        android:text="메인"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <FrameLayout
         android:id="@+id/framelayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/button_main"
         android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <fragment
-            android:id="@+id/fragment_main"
+            android:id="@+id/fragment_main2"
             android:name="com.example.plan_a.MainFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     </FrameLayout>
 
 
-
     <Button
         android:id="@+id/button_menu"
-        android:layout_width="150dp"
+        android:layout_width="70dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginEnd="30dp"
-        android:text="메뉴"
+        android:layout_marginEnd="10dp"
+        android:text="설정"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

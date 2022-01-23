@@ -22,6 +22,9 @@
             android:name=".Sub2Activity"
             android:exported="false" />
         <activity
+            android:name=".SettingActivity"
+            android:exported="true" />
+        <activity
             android:name=".SubActivity"
             android:exported="false" />
         <activity

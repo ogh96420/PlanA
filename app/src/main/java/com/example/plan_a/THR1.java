@@ -2,11 +2,14 @@ package com.example.plan_a;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -16,7 +19,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-public class THR1 extends AppCompatActivity {
+public class THR1 extends FragmentActivity {
 
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
@@ -24,40 +27,53 @@ public class THR1 extends AppCompatActivity {
     private ArrayList<List> arrayList;
     private FirebaseDatabase database;
     private DatabaseReference databaseReference;
+    KoreaFragment fragment_korea;
+    ChinaFragment fragment_china;
+    JapenFragment fragment_japen;
+    UsaFragment fragment_usa;
+    Button button_korea, button_japen, button_china, button_usa;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_thr1);
 
-        recyclerView = findViewById(R.id.recyclervuew);
-        recyclerView.setHasFixedSize(true);
-        layoutManager = new LinearLayoutManager(this);
-        recyclerView.setLayoutManager(layoutManager);
-        arrayList = new ArrayList<>();
+        fragment_korea = new KoreaFragment();
+        fragment_china = new ChinaFragment();
+        fragment_japen = new JapenFragment();
+        fragment_usa = new UsaFragment();
 
-        database = FirebaseDatabase.getInstance();
-        databaseReference = database.getReference("List");
-        databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
+        button_korea = findViewById(R.id.button_korea);
+        button_korea.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                arrayList.clear();
-                for (DataSnapshot snapshot : dataSnapshot.getChildren()){
-                    List list = snapshot.getValue(List.class);
-                    arrayList.add(list);
-                }
-                adapter.notifyDataSetChanged();
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-                Log.e("MainActivity", String.valueOf(databaseError.toException()));
-
+            public void onClick(View v) {
+                getSupportFragmentManager().beginTransaction().replace(R.id.framelayout2, fragment_korea).commit();
             }
         });
 
-        adapter = new ListAdapter(arrayList,this);
-        recyclerView.setAdapter(adapter);
+        button_china = findViewById(R.id.button_china);
+        button_china.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getSupportFragmentManager().beginTransaction().replace(R.id.framelayout2, fragment_china).commit();
+            }
+        });
 
+        button_japen = findViewById(R.id.button_japen);
+        button_japen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getSupportFragmentManager().beginTransaction().replace(R.id.framelayout2, fragment_japen).commit();
+            }
+        });
+
+        button_usa = findViewById(R.id.button_USA);
+        button_usa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getSupportFragmentManager().beginTransaction().replace(R.id.framelayout2, fragment_usa).commit();
+            }
+        });
     }
 }
