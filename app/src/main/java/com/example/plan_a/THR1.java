@@ -3,14 +3,17 @@ package com.example.plan_a;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.android.material.tabs.TabLayout;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -21,6 +24,9 @@ import java.util.ArrayList;
 
 public class THR1 extends FragmentActivity {
 
+
+
+    private FragmentPagerAdapter fragmentPagerAdapter; //뷰페이저
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager layoutManager;
@@ -39,12 +45,21 @@ public class THR1 extends FragmentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_thr1);
 
+
+        ViewPager viewPager = findViewById(R.id.viewPager);
+        fragmentPagerAdapter = new ViewPagerAdaper(getSupportFragmentManager());
+
+        TabLayout tabLayout = findViewById(R.id.tab_layout);
+        viewPager.setAdapter(fragmentPagerAdapter);
+        tabLayout.setupWithViewPager(viewPager);
+        //뷰페이저 세팅
+
         fragment_korea = new KoreaFragment();
         fragment_china = new ChinaFragment();
         fragment_japen = new JapenFragment();
         fragment_usa = new UsaFragment();
 
-        button_korea = findViewById(R.id.button_korea);
+        /*button_korea = findViewById(R.id.button_korea);
         button_korea.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -74,6 +89,6 @@ public class THR1 extends FragmentActivity {
             public void onClick(View v) {
                 getSupportFragmentManager().beginTransaction().replace(R.id.framelayout2, fragment_usa).commit();
             }
-        });
+        });*/
     }
 }

@@ -21,7 +21,7 @@ public class SubActivity extends AppCompatActivity {
         식사.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(SubActivity.this, THR2.class);
+                Intent intent = new Intent(SubActivity.this, THR1.class);
                 startActivity(intent);
             }
         });
